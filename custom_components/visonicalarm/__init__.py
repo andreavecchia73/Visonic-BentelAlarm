@@ -15,7 +15,7 @@ from homeassistant.helpers.entity import Entity
 from homeassistant.util import Throttle
 import homeassistant.helpers.config_validation as cv
 
-REQUIREMENTS = ['visonicalarm2==3.3.1', 'python-dateutil==2.7.3']
+REQUIREMENTS = ['https://github.com/andreavecchia73/VisonicAlarm2#visonicalarm2==3.3.1', 'python-dateutil==2.7.3']
 
 _LOGGER = logging.getLogger(__name__)
 
