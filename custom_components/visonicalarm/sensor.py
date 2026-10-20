@@ -46,6 +46,7 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
             if device.subtype is not None:
                 if (
                     "CONTACT" in device.subtype
+                    or "_MC_" in device.subtype
                     or "MOTION" in device.subtype
                     or "CURTAIN" in device.subtype
                 ):

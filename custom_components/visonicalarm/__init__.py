@@ -15,7 +15,7 @@ from homeassistant.helpers.entity import Entity
 from homeassistant.util import Throttle
 import homeassistant.helpers.config_validation as cv
 
-REQUIREMENTS = ['visonicalarm2==3.3.6', 'python-dateutil==2.7.3']
+REQUIREMENTS = ['https://github.com/andreavecchia73/VisonicAlarm2/archive/master.zip#visonicalarm2==3.3.7', 'python-dateutil==2.7.3']
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -58,21 +58,6 @@ CONFIG_SCHEMA = vol.Schema({
 }, extra=vol.ALLOW_EXTRA)
 
 
-def log_raw_devices(alarm):
-    """ Temporary diagnostic: log every device the cloud returns, including unsupported subtypes. """
-    try:
-        devices = alarm._System__api.get_all_devices() or []
-    except Exception as err:
-        _LOGGER.warning('Unable to list raw devices: %s', err)
-        return
-    for device in devices:
-        if device is not None:
-            _LOGGER.warning(
-                'Raw device id=%s name=%s zone=%s device_type=%s subtype=%s',
-                device.get('id'), device.get('name'), device.get('zone_type'),
-                device.get('device_type'), device.get('subtype'))
-
-
 def setup(hass, config):
     """ Setup the Visonic Alarm component."""
     from visonic import alarm as visonicalarm
@@ -82,7 +67,6 @@ def setup(hass, config):
         return False
 
     HUB.update()
-    log_raw_devices(HUB.alarm)
 
     # Load the supported platforms
     for component in ('sensor', 'alarm_control_panel'):
