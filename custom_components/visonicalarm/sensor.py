@@ -81,7 +81,7 @@ class VisonicAlarmContact(Entity):
     @property
     def unique_id(self):
         """Return a unique id."""
-        return self._id
+        return str(self._id)
 
     @property
     def state_attributes(self):
