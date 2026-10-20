@@ -1,10 +1,10 @@
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
-<br><a href="https://www.buymeacoffee.com/4nd3rs" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-black.png" width="150px" height="35px" alt="Buy Me A Coffee" style="height: 35px !important;width: 150px !important;" ></a>
+<br><a href="https://www.buymeacoffee.com/andreavecchia73" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-black.png" width="150px" height="35px" alt="Buy Me A Coffee" style="height: 35px !important;width: 150px !important;" ></a>
 
 ## Visonic/Bentel/Tyco Alarm Sensor
 This component interfaces with the API server hosted by your home alarm system company.
 
-It is dependant on the Python module: https://github.com/And3rsL/VisonicAlarm2 which will automatically be installed when running the sensor component. This library has much more functionality than this component utilises, so feel free to check it out of you are into Python 3 programming.
+It is dependant on the Python module: https://github.com/andreavecchia73/VisonicAlarm2 which will automatically be installed when running the sensor component. This library has much more functionality than this component utilises, so feel free to check it out of you are into Python 3 programming.
 
 This is unsupported by Visonic - they don't publish their REST API. It is also unsupported by me. I accept no liability for your use of the component or library nor for any loss or damage resulting from security breaches at your property.
 
@@ -40,4 +40,4 @@ and **app_id** is just a uniqe id generated from this site: https://www.uuidgene
 Please be sure that the user is the MASTER USER and you alredy added your panel in your registered account
 
 ### Screenshots ###
-![Alarm Panel dialog](https://github.com/And3rsL/VisonicAlarm-for-Hassio/blob/master/HomeAssistantArmDialog2.png)
+![Alarm Panel dialog](https://github.com/andreavecchia73/VisonicAlarm/blob/master/HomeAssistantArmDialog2.png)

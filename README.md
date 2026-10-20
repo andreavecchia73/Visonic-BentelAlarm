@@ -4,7 +4,7 @@
 ## Visonic/Bentel/Tyco Alarm Sensor.
 This component interfaces with the API server hosted by your home alarm system company.
 
-It is dependant on the Python module: https://github.com/And3rsL/VisonicAlarm2 which will automatically be installed when running the sensor component. This library has much more functionality than this component utilises, so feel free to check it out of you are into Python 3 programming.
+It is dependant on the Python module: https://github.com/andreavecchia73/VisonicAlarm2 which will automatically be installed when running the sensor component. This library has much more functionality than this component utilises, so feel free to check it out of you are into Python 3 programming.
 
 This is unsupported by Visonic - they don't publish their REST API. It is also unsupported by me. I accept no liability for your use of the component or library nor for any loss or damage resulting from security breaches at your property.
 
@@ -40,4 +40,4 @@ and **user_id** is just a uniqe id generated from this site: https://www.uuidgen
 Please be sure that the user is the MASTER USER and you alredy added your panel in your registered account
 
 ### Screenshots ###
-![Alarm Panel dialog](https://github.com/And3rsL/VisonicAlarm-for-Hassio/blob/master/HomeAssistantArmDialog2.png)
+![Alarm Panel dialog](https://github.com/andreavecchia73/VisonicAlarm/blob/master/HomeAssistantArmDialog2.png)
