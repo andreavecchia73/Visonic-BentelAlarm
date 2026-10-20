@@ -1,7 +1,7 @@
 {
   "domain": "visonicalarm",
   "name": "Visonic/Bentel/Tyco Alarm System",
-  "documentation": "https://github.com/andreavecchia73/VisonicAlarm",
+  "documentation": "https://github.com/andreavecchia73/Visonic-BentelAlarm",
   "version": "v3.3.7",
   "requirements": [
     "https://github.com/andreavecchia73/VisonicAlarm2/archive/master.zip#visonicalarm2==3.3.7",
